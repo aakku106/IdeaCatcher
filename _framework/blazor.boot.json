@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "IdeaCatcherApp",
   "resources": {
-    "hash": "sha256-WVJxfKB5IP0g4YV0ZA6zairJuNH+YzDtDqP+pulf1KI=",
+    "hash": "sha256-iaqFVIHPzcm62fBWSbRInlnMB2gaPmwjDU2SbVQt2Q4=",
     "jsModuleNative": {
       "dotnet.native.8.0.11.n1sf6xr5tz.js": "sha256-VdKq87/z5NIxZKmuM+fv38XF+RcEb/bg3jVBwQSfwP4="
     },
@@ -21,7 +21,7 @@
       "Blazorise.Icons.FontAwesome.wasm": "sha256-Lvvzptz0qj6FzRTMQW4BvxF+ZgSd2t0WRIMarMLTp1g=",
       "Blazorise.Licensing.wasm": "sha256-5Mr9mILwJ1jWAhoNXuDxak5Sw8yU7kCdOyCy13Rdpz4=",
       "Blazorise.wasm": "sha256-xxD9NSKffP9aAy7DSA1ChZ4QH1R9zcBuRFyaqW04GCg=",
-      "IdeaCatcherApp.wasm": "sha256-PmRJBl1h7eXHvPLFgP7qDQg2K1sXmPRGed4O00N3VIQ=",
+      "IdeaCatcherApp.wasm": "sha256-GRLWD+Ygv8vspjoHJzlfy3MOGQcoFhaoCeOlkC4/uqs=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-ErDaL7ENsG6MwP1boQhdf1FZGqYhQPx9L8jd33Qd7pE=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-LMKniiKX0ksqC8nP0zjsSJ/oWLad3919O4Utn5i0fBA=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-ERYUEuv0whAwqymaXCdsdYUbRx9bRX/8u71FBJMZYOI=",
