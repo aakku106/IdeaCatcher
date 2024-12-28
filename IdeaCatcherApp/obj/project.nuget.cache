@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "EZ7JBGKwc1A=",
+  "dgSpecHash": "2wNdwf4hsmU=",
   "success": true,
   "projectFilePath": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/IdeaCatcherApp.csproj",
   "expectedPackageFiles": [
     "/Users/aakku/.nuget/packages/blazored.localstorage/4.5.0/blazored.localstorage.4.5.0.nupkg.sha512",
     "/Users/aakku/.nuget/packages/blazorise/1.7.1/blazorise.1.7.1.nupkg.sha512",
-    "/Users/aakku/.nuget/packages/blazorise.bootstrap/1.7.1/blazorise.bootstrap.1.7.1.nupkg.sha512",
     "/Users/aakku/.nuget/packages/blazorise.icons.fontawesome/1.7.1/blazorise.icons.fontawesome.1.7.1.nupkg.sha512",
     "/Users/aakku/.nuget/packages/blazorise.licensing/1.3.0/blazorise.licensing.1.3.0.nupkg.sha512",
     "/Users/aakku/.nuget/packages/microsoft.aspnetcore.authorization/8.0.11/microsoft.aspnetcore.authorization.8.0.11.nupkg.sha512",

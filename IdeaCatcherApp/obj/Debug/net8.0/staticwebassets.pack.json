@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/css/app.css"
     },
     {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/css/theme.css",
+      "PackagePath": "staticwebassets/css/theme.css"
+    },
+    {
       "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/favicon.png",
       "PackagePath": "staticwebassets/favicon.png"
     },
@@ -219,10 +223,6 @@
     {
       "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/offline.html",
       "PackagePath": "staticwebassets/offline.html"
-    },
-    {
-      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/sample-data/weather.json",
-      "PackagePath": "staticwebassets/sample-data/weather.json"
     },
     {
       "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/screenshots/desktop1 copy.png",

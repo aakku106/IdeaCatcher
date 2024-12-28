@@ -1,0 +1,102 @@
+/** @format */
+
+.idea-manager {
+  display: grid;
+  grid-template-columns: 200px 250px 1fr;
+  gap: 1px;
+  height: 100%;
+  background: var(--border);
+}
+
+.folders-panel,
+.notes-panel,
+.editor-panel {
+  background: var(--surface);
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.folders-panel h3,
+.notes-panel h3 {
+  margin: 0 0 16px 0;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.new-folder,
+.new-note {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.new-folder input,
+.new-note input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.folder,
+.note {
+  padding: 8px 12px;
+  margin: 4px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--text);
+}
+
+.folder:hover,
+.note:hover {
+  background: var(--surface-hover);
+}
+
+.folder.selected,
+.note.selected {
+  background: var(--primary);
+  color: var(--text-on-primary);
+}
+
+.note h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.editor-panel {
+  display: none;
+  background: var(--surface);
+}
+
+.editor-panel.visible {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .idea-manager {
+    grid-template-columns: 1fr;
+  }
+
+  .folders-panel,
+  .notes-panel,
+  .editor-panel {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .folders-panel.visible,
+  .notes-panel.visible,
+  .editor-panel.visible {
+    transform: translateX(0);
+  }
+}

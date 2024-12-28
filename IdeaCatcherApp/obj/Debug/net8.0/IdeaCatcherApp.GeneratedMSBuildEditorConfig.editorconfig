@@ -28,10 +28,6 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/Pages/IdeaManager.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSWRlYU1hbmFnZXIucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -39,6 +35,14 @@ build_metadata.AdditionalFiles.CssScope =
 [/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/Components/NoteEditor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Ob3RlRWRpdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-whkingxrot
+
+[/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/Pages/IdeaManager.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSWRlYU1hbmFnZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-dx9sjjwghg
 
 [/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=

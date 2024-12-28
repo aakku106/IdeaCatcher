@@ -6,50 +6,34 @@ namespace IdeaCatcherApp.Services;
 public interface IIdeaStorageService
 {
     Task<List<IdeaFolder>> GetFoldersAsync();
-    Task<IdeaFolder> CreateFolderAsync(string name);
-    Task<IdeaNote> AddNoteToFolderAsync(string folderId, IdeaNote note);
-    Task SaveChangesAsync();
+    Task SaveFoldersAsync(List<IdeaFolder> folders);
 }
 
-public class LocalStorageIdeaService : IIdeaStorageService
+public class IdeaStorageService : IIdeaStorageService
 {
     private readonly ILocalStorageService _localStorage;
-    private const string STORAGE_KEY = "ideacatcher_data";
+    private const string STORAGE_KEY = "idea_folders";
 
-    public LocalStorageIdeaService(ILocalStorageService localStorage)
+    public IdeaStorageService(ILocalStorageService localStorage)
     {
         _localStorage = localStorage;
     }
 
     public async Task<List<IdeaFolder>> GetFoldersAsync()
     {
-        return await _localStorage.GetItemAsync<List<IdeaFolder>>(STORAGE_KEY)
-            ?? new List<IdeaFolder>();
+        try
+        {
+            var folders = await _localStorage.GetItemAsync<List<IdeaFolder>>(STORAGE_KEY);
+            return folders ?? new List<IdeaFolder>();
+        }
+        catch
+        {
+            return new List<IdeaFolder>();
+        }
     }
 
-    public async Task<IdeaFolder> CreateFolderAsync(string name)
+    public async Task SaveFoldersAsync(List<IdeaFolder> folders)
     {
-        var folders = await GetFoldersAsync();
-        var newFolder = new IdeaFolder { Name = name };
-        folders.Add(newFolder);
-        await _localStorage.SetItemAsync(STORAGE_KEY, folders);
-        return newFolder;
-    }
-
-    public async Task<IdeaNote> AddNoteToFolderAsync(string folderId, IdeaNote note)
-    {
-        var folders = await GetFoldersAsync();
-        var folder = folders.FirstOrDefault(f => f.Id == folderId);
-        if (folder == null) throw new KeyNotFoundException("Folder not found");
-
-        folder.Notes.Add(note);
-        await SaveChangesAsync();
-        return note;
-    }
-
-    public async Task SaveChangesAsync()
-    {
-        var folders = await GetFoldersAsync();
         await _localStorage.SetItemAsync(STORAGE_KEY, folders);
     }
 }

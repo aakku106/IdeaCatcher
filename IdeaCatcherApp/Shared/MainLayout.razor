@@ -1,13 +1,137 @@
 ﻿@inherits LayoutComponentBase
+@inject ThemeService ThemeService
+@inject NavigationManager Navigation
+@implements IAsyncDisposable
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
+<div class="app-container @_currentTheme">
+    <div class="sidebar @(_sidebarVisible ? "visible" : "")">
+        <div class="sidebar-header" @onclick="GoHome">
+            <div class="app-brand">
+                <span class="app-icon">📝</span>
+                <h2>IdeaCatcher</h2>
+            </div>
+        </div>
+        <div class="folder-list">
+            @if (_folders != null)
+            {
+                @foreach (var folder in _folders)
+                {
+                    <div class="folder-item @(folder.Id == _selectedFolderId ? "active" : "")"
+                        @onclick="() => SelectFolder(folder.Id)">
+                        <span class="oi oi-folder"></span>
+                        <span class="folder-name">@folder.Name</span>
+                    </div>
+                }
+            }
+            <div class="folder-item new-folder" @onclick="ShowNewFolderDialog">
+                <span class="oi oi-plus"></span>
+                <span class="folder-name">New Folder</span>
+            </div>
+        </div>
     </div>
 
-    <main>
-        <article class="content px-4">
+    <div class="main-content">
+        <div class="top-bar">
+            <div class="window-controls">
+                <div class="control close"></div>
+                <div class="control minimize"></div>
+                <div class="control maximize"></div>
+            </div>
+
+            <button class="menu-button" @onclick="ToggleSidebar">
+                <span class="oi oi-menu"></span>
+            </button>
+
+            <div class="top-bar-actions">
+                <button class="nav-button" @onclick="GoHome">
+                    <span class="oi oi-home"></span>
+                    Home
+                </button>
+
+                <div class="theme-toggle">
+                    <button class="theme-button" @onclick="ToggleTheme">
+                        @if (_currentTheme == "dark")
+                        {
+                            <span>☀️</span>
+                        }
+                        else
+                        {
+                            <span>🌙</span>
+                        }
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-area">
             @Body
-        </article>
-    </main>
+        </div>
+    </div>
 </div>
+
+@code {
+    private bool _sidebarVisible = true;
+    private string _currentTheme = "system";
+    private string? _selectedFolderId;
+    private List<IdeaFolder>? _folders;
+
+    [Inject] private IIdeaStorageService StorageService { get; set; } = default!;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _currentTheme = await ThemeService.GetThemeAsync();
+        _folders = await StorageService.GetFoldersAsync();
+        ThemeService.OnThemeChange += OnThemeChange;
+    }
+
+    private void GoHome()
+    {
+        Navigation.NavigateTo("");
+    }
+
+    private void ToggleSidebar()
+    {
+        _sidebarVisible = !_sidebarVisible;
+    }
+
+    private async Task ToggleTheme()
+    {
+        _currentTheme = _currentTheme == "dark" ? "light transitioning" : "dark transitioning";
+        await ThemeService.SetThemeAsync(_currentTheme);
+
+        await Task.Delay(300);
+        _currentTheme = _currentTheme.Replace(" transitioning", "");
+        await InvokeAsync(StateHasChanged);
+    }
+
+    private void SelectFolder(string folderId)
+    {
+        _selectedFolderId = folderId;
+        Navigation.NavigateTo($"ideas?folder={folderId}");
+    }
+
+    private void ShowNewFolderDialog()
+    {
+        Navigation.NavigateTo("ideas?action=new-folder");
+    }
+
+    private void OnThemeChange(string theme)
+    {
+        _currentTheme = theme;
+        InvokeAsync(StateHasChanged);
+    }
+
+    private string GetFolderItemStyle(int index)
+    {
+        return $"--i: {index}";
+    }
+
+    public ValueTask DisposeAsync()
+    {
+        if (ThemeService != null)
+        {
+            ThemeService.OnThemeChange -= OnThemeChange;
+        }
+        return ValueTask.CompletedTask;
+    }
+}

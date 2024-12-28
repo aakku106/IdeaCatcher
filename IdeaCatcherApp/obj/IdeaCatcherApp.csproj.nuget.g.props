@@ -18,7 +18,6 @@
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly/8.0.0/build/net8.0/Microsoft.AspNetCore.Components.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly/8.0.0/build/net8.0/Microsoft.AspNetCore.Components.WebAssembly.props')" />
     <Import Project="$(NuGetPackageRoot)blazorise/1.7.1/buildTransitive/Blazorise.props" Condition="Exists('$(NuGetPackageRoot)blazorise/1.7.1/buildTransitive/Blazorise.props')" />
     <Import Project="$(NuGetPackageRoot)blazorise.icons.fontawesome/1.7.1/buildTransitive/Blazorise.Icons.FontAwesome.props" Condition="Exists('$(NuGetPackageRoot)blazorise.icons.fontawesome/1.7.1/buildTransitive/Blazorise.Icons.FontAwesome.props')" />
-    <Import Project="$(NuGetPackageRoot)blazorise.bootstrap/1.7.1/buildTransitive/Blazorise.Bootstrap.props" Condition="Exists('$(NuGetPackageRoot)blazorise.bootstrap/1.7.1/buildTransitive/Blazorise.Bootstrap.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_NET_Sdk_WebAssembly_Pack Condition=" '$(PkgMicrosoft_NET_Sdk_WebAssembly_Pack)' == '' ">/Users/aakku/.nuget/packages/microsoft.net.sdk.webassembly.pack/9.0.0</PkgMicrosoft_NET_Sdk_WebAssembly_Pack>

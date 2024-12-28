@@ -1,14 +1,78 @@
 @page "/"
+@inject NavigationManager Navigation
+@inject ThemeService ThemeService
 
-<PageTitle>IdeaCatcher</PageTitle>
+<div class="welcome-container">
+    <div class="welcome-content">
+        <div class="logo-section">
+            <div class="app-icon">
+                <span>📝</span>
+            </div>
+            <h1>IdeaCatcher</h1>
+            <p class="tagline">Capture your ideas, organize your thoughts</p>
+        </div>
 
-<div class="welcome-page">
-    <h1>Welcome to IdeaCatcher</h1>
-    <p>Start capturing your ideas and organizing them into folders.</p>
+        <div class="action-cards">
+            <div class="action-card" @onclick="GoToIdeas">
+                <div class="card-icon">📁</div>
+                <h3>My Ideas</h3>
+                <p>Access your folders and notes</p>
+            </div>
 
-    <div class="quick-actions">
-        <a href="ideas" class="btn btn-primary">
-            Start Managing Ideas
-        </a>
+            <div class="action-card" @onclick="CreateNewFolder">
+                <div class="card-icon">✨</div>
+                <h3>New Folder</h3>
+                <p>Start organizing your thoughts</p>
+            </div>
+
+            <div class="action-card" @onclick="ToggleTheme">
+                <div class="card-icon">
+                    @if (_currentTheme == "dark")
+                    {
+                        <span>☀️</span>
+                    }
+                    else
+                    {
+                        <span>🌙</span>
+                    }
+                </div>
+                <h3>Switch Theme</h3>
+                <p>@(_currentTheme == "dark" ? "Light mode" : "Dark mode")</p>
+            </div>
+        </div>
+
+        <div class="quick-tips">
+            <h4>Quick Tips</h4>
+            <ul>
+                <li>📌 Click on folders to view notes</li>
+                <li>✏️ Create new notes in any folder</li>
+                <li>🌙 Switch themes for comfort</li>
+            </ul>
+        </div>
     </div>
 </div>
+
+@code {
+    private string _currentTheme = "system";
+
+    protected override async Task OnInitializedAsync()
+    {
+        _currentTheme = await ThemeService.GetThemeAsync();
+    }
+
+    private void GoToIdeas()
+    {
+        Navigation.NavigateTo("ideas");
+    }
+
+    private async Task ToggleTheme()
+    {
+        _currentTheme = _currentTheme == "dark" ? "light" : "dark";
+        await ThemeService.SetThemeAsync(_currentTheme);
+    }
+
+    private void CreateNewFolder()
+    {
+        Navigation.NavigateTo("ideas?action=new-folder");
+    }
+}

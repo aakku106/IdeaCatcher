@@ -1,0 +1,96 @@
+/** @format */
+
+.note-editor[b-whkingxrot] {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--surface);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.note-header[b-whkingxrot] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.note-title[b-whkingxrot] {
+  flex: 1;
+}
+
+.note-title input[b-whkingxrot] {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  padding: 0;
+}
+
+.note-title input:focus[b-whkingxrot] {
+  outline: none;
+}
+
+.editor-toolbar[b-whkingxrot] {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.tool-button[b-whkingxrot] {
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tool-button:hover[b-whkingxrot] {
+  background: var(--button-secondary-hover);
+}
+
+.tool-button.active[b-whkingxrot] {
+  background: var(--primary-transparent);
+  color: var(--primary);
+}
+
+.separator[b-whkingxrot] {
+  width: 1px;
+  height: 24px;
+  background: var(--border);
+  margin: 0 8px;
+}
+
+.editor-content[b-whkingxrot] {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.editor-content:focus[b-whkingxrot] {
+  outline: none;
+}
+
+.note-footer[b-whkingxrot] {
+  padding: 8px 16px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+[contenteditable="true"]:empty[b-whkingxrot]:before {
+  content: attr(placeholder);
+  color: var(--text-secondary);
+  font-style: italic;
+}

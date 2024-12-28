@@ -1,4 +1,5 @@
 @page "/ideas"
+@using IdeaCatcherApp.Components
 @inject IIdeaStorageService StorageService
 
 <div class="idea-manager">
@@ -6,7 +7,10 @@
         <h3>Folders</h3>
         <div class="new-folder">
             <input @bind="newFolderName" placeholder="New folder name" />
-            <button @onclick="CreateFolder">Create</button>
+            <button class="action-button" @onclick="CreateFolder">
+                <span>+</span>
+                Create
+            </button>
         </div>
 
         @foreach (var folder in folders)
@@ -23,16 +27,25 @@
             <h3>Notes in @selectedFolder.Name</h3>
             <div class="new-note">
                 <input @bind="newNoteTitle" placeholder="Note title" />
-                <button @onclick="CreateNote">Add Note</button>
+                <button class="action-button" @onclick="CreateNote">
+                    <span>+</span>
+                    Add Note
+                </button>
             </div>
 
             @foreach (var note in selectedFolder.Notes)
             {
-                <div class="note">
+                <div class="note @(selectedNote?.Id == note.Id ? "selected" : "")" @onclick="() => SelectNote(note)">
                     <h4>@note.Title</h4>
-                    <textarea @bind="note.Content" @bind:event="oninput"></textarea>
                 </div>
             }
+        }
+    </div>
+
+    <div class="editor-panel @(selectedNote != null ? "visible" : "")">
+        @if (selectedNote != null)
+        {
+            <NoteEditor Note="@selectedNote" OnSave="SaveNote" />
         }
     </div>
 </div>
@@ -40,6 +53,7 @@
 @code {
     private List<IdeaFolder> folders = new();
     private IdeaFolder? selectedFolder;
+    private IdeaNote? selectedNote;
     private string newFolderName = "";
     private string newNoteTitle = "";
 
@@ -50,31 +64,47 @@
 
     private async Task CreateFolder()
     {
-        if (string.IsNullOrWhiteSpace(newFolderName)) return;
-
-        await StorageService.CreateFolderAsync(newFolderName);
-        folders = await StorageService.GetFoldersAsync();
-        newFolderName = "";
+        if (!string.IsNullOrWhiteSpace(newFolderName))
+        {
+            var folder = new IdeaFolder { Name = newFolderName };
+            folders.Add(folder);
+            await StorageService.SaveFoldersAsync(folders);
+            newFolderName = "";
+        }
     }
 
     private void SelectFolder(IdeaFolder folder)
     {
         selectedFolder = folder;
+        selectedNote = null;
     }
 
     private async Task CreateNote()
     {
-        if (selectedFolder == null || string.IsNullOrWhiteSpace(newNoteTitle)) return;
-
-        var note = new IdeaNote { Title = newNoteTitle };
-        await StorageService.AddNoteToFolderAsync(selectedFolder.Id, note);
-        folders = await StorageService.GetFoldersAsync();
-        selectedFolder = folders.First(f => f.Id == selectedFolder.Id);
-        newNoteTitle = "";
+        if (selectedFolder != null && !string.IsNullOrWhiteSpace(newNoteTitle))
+        {
+            var note = new IdeaNote { Title = newNoteTitle };
+            selectedFolder.Notes.Add(note);
+            await StorageService.SaveFoldersAsync(folders);
+            newNoteTitle = "";
+        }
     }
 
-    private async Task SaveChanges()
+    private void SelectNote(IdeaNote note)
     {
-        await StorageService.SaveChangesAsync();
+        selectedNote = note;
+    }
+
+    private async Task SaveNote(IdeaNote note)
+    {
+        if (selectedFolder != null)
+        {
+            var index = selectedFolder.Notes.FindIndex(n => n.Id == note.Id);
+            if (index != -1)
+            {
+                selectedFolder.Notes[index] = note;
+                await StorageService.SaveFoldersAsync(folders);
+            }
+        }
     }
 }

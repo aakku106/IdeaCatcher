@@ -1,0 +1,90 @@
+@using System.Text.Json
+@using Microsoft.JSInterop
+@inject IJSRuntime JS
+@inject IIdeaStorageService StorageService
+
+<div class="note-editor">
+    <div class="note-header">
+        <div class="note-title">
+            <input type="text" @bind="Note.Title" @bind:event="oninput" placeholder="Note title" />
+        </div>
+        <div class="note-actions">
+            <button class="action-button" @onclick="SaveNote">
+                <span>💾</span>
+                Save
+            </button>
+        </div>
+    </div>
+
+    <div class="editor-toolbar">
+        <button class="tool-button" @onclick="@(() => FormatText("bold"))">
+            <strong>B</strong>
+        </button>
+        <button class="tool-button" @onclick="@(() => FormatText("italic"))">
+            <em>I</em>
+        </button>
+        <button class="tool-button" @onclick="@(() => FormatText("underline"))">
+            <u>U</u>
+        </button>
+        <div class="separator"></div>
+        <button class="tool-button" @onclick="@(() => AddList("bullet"))">
+            <span>•</span>
+        </button>
+        <button class="tool-button" @onclick="@(() => AddList("number"))">
+            <span>1.</span>
+        </button>
+    </div>
+
+    <div class="editor-content" contenteditable="true" @ref="editorRef" @onblur="OnContentChanged">
+    </div>
+
+    <div class="note-footer">
+        <span class="last-saved">
+            @(LastSaved.HasValue ? $"Last saved: {LastSaved.Value.ToLocalTime():g}" : "Not saved yet")
+        </span>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public IdeaNote Note { get; set; } = new();
+
+    [Parameter]
+    public EventCallback<IdeaNote> OnSave { get; set; }
+
+    private ElementReference editorRef;
+    private DateTime? LastSaved;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !string.IsNullOrEmpty(Note.Content))
+        {
+            await JS.InvokeVoidAsync("setEditorContent", editorRef, Note.Content);
+        }
+    }
+
+    private async Task SaveNote()
+    {
+        Note.Content = await JS.InvokeAsync<string>("getEditorContent", editorRef);
+        Note.UpdatedAt = DateTime.UtcNow;
+        LastSaved = DateTime.UtcNow;
+        await OnSave.InvokeAsync(Note);
+        StateHasChanged();
+    }
+
+    private async Task OnContentChanged()
+    {
+        Note.Content = await JS.InvokeAsync<string>("getEditorContent", editorRef);
+    }
+
+    private async Task FormatText(string command)
+    {
+        await JS.InvokeVoidAsync("execCommand", command);
+    }
+
+    private async Task AddList(string type)
+    {
+        string command = type == "bullet" ? "insertUnorderedList" : "insertOrderedList";
+        await JS.InvokeVoidAsync("execCommand", command);
+    }
+}

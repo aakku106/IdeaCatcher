@@ -39,27 +39,6 @@
           "buildMultiTargeting/Blazorise.props": {}
         }
       },
-      "Blazorise.Bootstrap/1.7.1": {
-        "type": "package",
-        "dependencies": {
-          "Blazorise": "1.7.1",
-          "Microsoft.AspNetCore.Components": "8.0.11",
-          "Microsoft.AspNetCore.Components.Web": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2"
-        },
-        "compile": {
-          "lib/net8.0/Blazorise.Bootstrap.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/Blazorise.Bootstrap.dll": {}
-        },
-        "build": {
-          "buildTransitive/Blazorise.Bootstrap.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/Blazorise.Bootstrap.props": {}
-        }
-      },
       "Blazorise.Icons.FontAwesome/1.7.1": {
         "type": "package",
         "dependencies": {
@@ -617,27 +596,6 @@
         },
         "buildMultiTargeting": {
           "buildMultiTargeting/Blazorise.props": {}
-        }
-      },
-      "Blazorise.Bootstrap/1.7.1": {
-        "type": "package",
-        "dependencies": {
-          "Blazorise": "1.7.1",
-          "Microsoft.AspNetCore.Components": "8.0.11",
-          "Microsoft.AspNetCore.Components.Web": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2"
-        },
-        "compile": {
-          "lib/net8.0/Blazorise.Bootstrap.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/Blazorise.Bootstrap.dll": {}
-        },
-        "build": {
-          "buildTransitive/Blazorise.Bootstrap.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/Blazorise.Bootstrap.props": {}
         }
       },
       "Blazorise.Icons.FontAwesome/1.7.1": {
@@ -1235,32 +1193,6 @@
         "staticwebassets/vendors/popper.js",
         "staticwebassets/vendors/sha512.js",
         "staticwebassets/vendors/tippy.js"
-      ]
-    },
-    "Blazorise.Bootstrap/1.7.1": {
-      "sha512": "ouNUN5Vg5GAXXTrwrQb0F6+H/ige2jFP204A6kW4Ah+mBxoD0BBwxPLfpWoKYhQl1xb4JE2bjI9TJW+KL4YKkw==",
-      "type": "package",
-      "path": "blazorise.bootstrap/1.7.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Blazorise.png",
-        "LICENSE.md",
-        "blazorise.bootstrap.1.7.1.nupkg.sha512",
-        "blazorise.bootstrap.nuspec",
-        "build/Blazorise.Bootstrap.props",
-        "build/Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-        "build/Microsoft.AspNetCore.StaticWebAssets.props",
-        "buildMultiTargeting/Blazorise.Bootstrap.props",
-        "buildTransitive/Blazorise.Bootstrap.props",
-        "lib/net6.0/Blazorise.Bootstrap.dll",
-        "lib/net7.0/Blazorise.Bootstrap.dll",
-        "lib/net8.0/Blazorise.Bootstrap.dll",
-        "lib/net9.0/Blazorise.Bootstrap.dll",
-        "staticwebassets/blazorise.bootstrap.css",
-        "staticwebassets/blazorise.bootstrap.min.css",
-        "staticwebassets/modal.js",
-        "staticwebassets/tooltip.js"
       ]
     },
     "Blazorise.Icons.FontAwesome/1.7.1": {
@@ -2373,8 +2305,6 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Blazored.LocalStorage >= 4.5.0",
-      "Blazorise >= 1.7.1",
-      "Blazorise.Bootstrap >= 1.7.1",
       "Blazorise.Icons.FontAwesome >= 1.7.1",
       "Microsoft.AspNetCore.Components.WebAssembly >= 8.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 8.0.0",
@@ -2429,14 +2359,6 @@
           "Blazored.LocalStorage": {
             "target": "Package",
             "version": "[4.5.0, )"
-          },
-          "Blazorise": {
-            "target": "Package",
-            "version": "[1.7.1, )"
-          },
-          "Blazorise.Bootstrap": {
-            "target": "Package",
-            "version": "[1.7.1, )"
           },
           "Blazorise.Icons.FontAwesome": {
             "target": "Package",
