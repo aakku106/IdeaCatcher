@@ -1,3 +1,19 @@
+<div align="center"> 
+
+ <br> 
+ <br> 
+
+   
+ No ID, no passwords, no trackers. Just you and your ideas. Fully offline, fully secure. You’re the master here—free to share, sync, and rule your world. No one’s watching—not even Zuck!
+ 
+ <br> 
+  <br> 
+
+
+
+ </div>
+
+
 # IdeaCatcher
 
 **IdeaCatcher** is a cutting-edge note-taking and idea-organizing platform built with **Blazor WebAssembly**. Designed to respect user privacy, it stores all data locally in **IndexedDB** while providing a sleek and interactive PWA experience. Perfect for creative thinkers, students, and professionals, IdeaCatcher allows you to manage your ideas effortlessly, even offline.
