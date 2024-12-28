@@ -1,41 +1,63 @@
-const cacheName = 'ideaCatcherCache-v1';
-const assetsToCache = [
-  '/',
-  '/index.html',
-  '/css/app.css',
-  '/js/app.js',
-  '/manifest.json',
-  '/icons/icon-192x192.png',
-  '/icons/icon-512x512.png',
+// Cache names
+const CACHE_NAME = 'ideacatcher-cache-v1';
+const OFFLINE_URL = 'offline.html';
+
+// Files to cache
+const FILES_TO_CACHE = [
+    '/',
+    '/index.html',
+    '/manifest.json',
+    '/css/app.css',
+    '/lib/bootstrap/dist/css/bootstrap.min.css',
+    '/IdeaCatcherApp.styles.css',
+    '/icon-192.png',
+    '/icon-512.png',
+    '/offline.html'
 ];
 
+// Install event
 self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(cacheName).then((cache) => {
-      return cache.addAll(assetsToCache);
-    })
-  );
+    event.waitUntil(
+        caches.open(CACHE_NAME)
+            .then((cache) => {
+                console.log('[ServiceWorker] Pre-caching offline page');
+                return cache.addAll(FILES_TO_CACHE);
+            })
+    );
 });
 
-self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      return cachedResponse || fetch(event.request);
-    })
-  );
-});
-
+// Activate event
 self.addEventListener('activate', (event) => {
-  const cacheWhitelist = [cacheName];
-  event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
-        cacheNames.map((cacheName) => {
-          if (!cacheWhitelist.includes(cacheName)) {
-            return caches.delete(cacheName);
-          }
+    event.waitUntil(
+        caches.keys().then((keyList) => {
+            return Promise.all(keyList.map((key) => {
+                if (key !== CACHE_NAME) {
+                    console.log('[ServiceWorker] Removing old cache', key);
+                    return caches.delete(key);
+                }
+            }));
         })
-      );
-    })
-  );
+    );
+});
+
+// Fetch event
+self.addEventListener('fetch', (event) => {
+    if (event.request.mode === 'navigate') {
+        event.respondWith(
+            fetch(event.request)
+                .catch(() => {
+                    return caches.open(CACHE_NAME)
+                        .then((cache) => {
+                            return cache.match('offline.html');
+                        });
+                })
+        );
+    } else {
+        event.respondWith(
+            fetch(event.request)
+                .catch(() => {
+                    return caches.match(event.request);
+                })
+        );
+    }
 });

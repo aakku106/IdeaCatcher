@@ -28,26 +28,22 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
+[/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/Pages/IdeaManager.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSWRlYU1hbmFnZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvV2VhdGhlci5yYXpvcg==
+[/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/Layout/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-ljnijifsgy
+[/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-htcaxyx8nj
 
-[/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/Layout/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L05hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-yb2o9eze8e
+[/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-4ccxzbelln

@@ -17,8 +17,20 @@
       "PackagePath": "staticwebassets/favicon.png"
     },
     {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/generate-icons.html",
+      "PackagePath": "staticwebassets/generate-icons.html"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/generate-screenshots.html",
+      "PackagePath": "staticwebassets/generate-screenshots.html"
+    },
+    {
       "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/icon-192.png",
       "PackagePath": "staticwebassets/icon-192.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/icon-512.png",
+      "PackagePath": "staticwebassets/icon-512.png"
     },
     {
       "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/index.html",
@@ -205,12 +217,32 @@
       "PackagePath": "staticwebassets/manifest.json"
     },
     {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/offline.html",
+      "PackagePath": "staticwebassets/offline.html"
+    },
+    {
       "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/sample-data/weather.json",
       "PackagePath": "staticwebassets/sample-data/weather.json"
     },
     {
-      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/service-worker.js",
-      "PackagePath": "staticwebassets/service-worker.js"
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/screenshots/desktop1 copy.png",
+      "PackagePath": "staticwebassets/screenshots/desktop1 copy.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/screenshots/desktop1.png",
+      "PackagePath": "staticwebassets/screenshots/desktop1.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/screenshots/icon-192.png",
+      "PackagePath": "staticwebassets/screenshots/icon-192.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/screenshots/icon-512.png",
+      "PackagePath": "staticwebassets/screenshots/icon-512.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/screenshots/mobile1.png",
+      "PackagePath": "staticwebassets/screenshots/mobile1.png"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.IdeaCatcherApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
