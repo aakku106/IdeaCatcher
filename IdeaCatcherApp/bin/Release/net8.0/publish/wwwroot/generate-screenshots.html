@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <canvas id="desktop" width="1280" height="720"></canvas>
+    <canvas id="mobile" width="750" height="1334"></canvas>
+    <script>
+        function generateScreenshot(canvasId, width, height, text) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext('2d');
+
+            // Background
+            ctx.fillStyle = '#f5f5f5';
+            ctx.fillRect(0, 0, width, height);
+
+            // Mock UI elements
+            ctx.fillStyle = '#03173d';
+            ctx.fillRect(0, 0, width, 60); // Header
+
+            // Text
+            ctx.fillStyle = '#333';
+            ctx.font = '24px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('IdeaCatcher Demo', width / 2, height / 2);
+
+            // Download
+            const link = document.createElement('a');
+            link.download = `${canvasId}1.png`;
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+
+        generateScreenshot('desktop', 1280, 720);
+        generateScreenshot('mobile', 750, 1334);
+    </script>
+</body>
+
+</html>

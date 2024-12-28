@@ -1,4 +1,4 @@
-/* Manifest version: oJZKtXm4 */
+/* Manifest version: /ixVdD0Z */
 // Cache names
 const CACHE_NAME = 'ideacatcher-cache-v1';
 const OFFLINE_URL = 'offline.html';

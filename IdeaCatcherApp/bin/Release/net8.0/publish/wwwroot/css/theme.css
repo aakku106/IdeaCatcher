@@ -1,0 +1,179 @@
+/**
+ * Light Theme Variables
+ *
+ * @format
+ */
+
+/* Light Theme */
+:root {
+  /* Base colors */
+  --primary: #0a84ff;
+  --primary-hover: #409cff;
+  --primary-active: #0071e3;
+  --primary-transparent: rgba(10, 132, 255, 0.1);
+
+  /* Background colors */
+  --background: #f2f2f7;
+  --surface: #ffffff;
+  --surface-hover: #f5f5f7;
+  --surface-active: #e9e9eb;
+  --sidebar-bg: rgba(255, 255, 255, 0.85);
+  --card-bg: #ffffff;
+
+  /* Text colors */
+  --text: #1c1c1e;
+  --text-secondary: #3a3a3c;
+  --text-tertiary: #48484a;
+  --text-on-primary: #ffffff;
+
+  /* Border and shadow */
+  --border: rgba(0, 0, 0, 0.1);
+  --border-hover: rgba(0, 0, 0, 0.15);
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --surface-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+
+  /* Effects */
+  --blur: saturate(180%) blur(20px);
+
+  /* Transitions */
+  --transition-speed: 0.3s;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Button styles */
+  --button-bg: #0a84ff;
+  --button-hover: #409cff;
+  --button-active: #0071e3;
+  --button-text: #ffffff;
+  --button-shadow: 0 2px 8px rgba(10, 132, 255, 0.3);
+  --button-secondary-bg: rgba(60, 60, 67, 0.03);
+  --button-secondary-hover: rgba(60, 60, 67, 0.08);
+  --button-secondary-text: #1c1c1e;
+}
+
+/* Dark Theme */
+.dark {
+  /* Base colors */
+  --primary: #0a84ff;
+  --primary-hover: #409cff;
+  --primary-active: #0071e3;
+  --primary-transparent: rgba(10, 132, 255, 0.1);
+
+  /* Background colors */
+  --background: #161618;
+  --surface: #232325;
+  --surface-hover: #2c2c2e;
+  --surface-active: #3a3a3c;
+  --sidebar-bg: rgba(35, 35, 37, 0.85);
+  --card-bg: #2c2c2e;
+
+  /* Text colors */
+  --text: #ffffff;
+  --text-secondary: #ebebf5;
+  --text-tertiary: rgba(235, 235, 245, 0.6);
+  --text-on-primary: #ffffff;
+
+  /* Border and shadow */
+  --border: rgba(235, 235, 245, 0.1);
+  --border-hover: rgba(235, 235, 245, 0.15);
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --surface-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  /* Button styles */
+  --button-bg: #0a84ff;
+  --button-hover: #409cff;
+  --button-active: #0071e3;
+  --button-text: #ffffff;
+  --button-shadow: 0 2px 8px rgba(10, 132, 255, 0.3);
+  --button-secondary-bg: rgba(235, 235, 245, 0.08);
+  --button-secondary-hover: rgba(235, 235, 245, 0.12);
+  --button-secondary-text: #ffffff;
+}
+
+/* System Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    /* Same as dark theme values */
+    --primary: #2997ff;
+    --primary-hover: #3d9fff;
+    --background: #1a1a1a;
+    --surface: #2c2c2e;
+    --surface-hover: #3a3a3c;
+    --sidebar-bg: rgba(28, 28, 30, 0.8);
+    --text: #f5f5f7;
+    --text-secondary: #98989d;
+    --text-tertiary: #8e8e93;
+    --border: rgba(255, 255, 255, 0.1);
+    --shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    --surface-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Force Light Theme */
+.light {
+  --primary: #0071e3;
+  --background: #f5f5f7;
+  --surface: #ffffff;
+  --text: #1d1d1f;
+  --text-secondary: #6e6e73;
+  --border: rgba(0, 0, 0, 0.1);
+  --sidebar: rgba(255, 255, 255, 0.8);
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle {
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+.theme-button {
+  background: none;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.theme-button:hover {
+  background-color: var(--border);
+}
+
+/* Input Contrast Fixes */
+input,
+textarea {
+  background-color: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+/* Text Visibility Fixes */
+.folder-item {
+  color: var(--text);
+}
+
+.note-card {
+  color: var(--text);
+  background-color: var(--surface);
+}
+
+.note-card h4 {
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+/* Add theme transition to all elements */
+*,
+*::before,
+*::after {
+  transition: background-color var(--transition-speed) var(--transition-timing),
+    color var(--transition-speed) var(--transition-timing),
+    border-color var(--transition-speed) var(--transition-timing),
+    box-shadow var(--transition-speed) var(--transition-timing);
+}

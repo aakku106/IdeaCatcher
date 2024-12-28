@@ -1,0 +1,269 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/bin/Release/net8.0/wwwroot/_framework/blazor.webassembly.js",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Release/net8.0/scopedcss/bundle/IdeaCatcherApp.styles.css",
+      "PackagePath": "staticwebassets/IdeaCatcherApp.styles.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/css/app.css",
+      "PackagePath": "staticwebassets/css/app.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/css/theme.css",
+      "PackagePath": "staticwebassets/css/theme.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/generate-icons.html",
+      "PackagePath": "staticwebassets/generate-icons.html"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/generate-screenshots.html",
+      "PackagePath": "staticwebassets/generate-screenshots.html"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/icon-192.png",
+      "PackagePath": "staticwebassets/icon-192.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/icon-512.png",
+      "PackagePath": "staticwebassets/icon-512.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/manifest.json",
+      "PackagePath": "staticwebassets/manifest.json"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/offline.html",
+      "PackagePath": "staticwebassets/offline.html"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/screenshots/desktop1 copy.png",
+      "PackagePath": "staticwebassets/screenshots/desktop1 copy.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/screenshots/desktop1.png",
+      "PackagePath": "staticwebassets/screenshots/desktop1.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/screenshots/icon-192.png",
+      "PackagePath": "staticwebassets/screenshots/icon-192.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/screenshots/icon-512.png",
+      "PackagePath": "staticwebassets/screenshots/icon-512.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/screenshots/mobile1.png",
+      "PackagePath": "staticwebassets/screenshots/mobile1.png"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.IdeaCatcherApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.IdeaCatcherApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.build.IdeaCatcherApp.props",
+      "PackagePath": "build\\IdeaCatcherApp.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.buildMultiTargeting.IdeaCatcherApp.props",
+      "PackagePath": "buildMultiTargeting\\IdeaCatcherApp.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.buildTransitive.IdeaCatcherApp.props",
+      "PackagePath": "buildTransitive\\IdeaCatcherApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
