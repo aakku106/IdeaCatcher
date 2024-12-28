@@ -1,8 +1,8 @@
 self.assetsManifest = {
-  "version": "740+Z5MZ",
+  "version": "oJZKtXm4",
   "assets": [
     {
-      "hash": "sha256-uJZQUZjJhwebtyEo70L9Jm5m+14rVIjqNey3J6QeL5c=",
+      "hash": "sha256-h+ve0CCX3U2zz3El4Bs966lFPnSWSgB5TCw0yKp8HUk=",
       "url": "IdeaCatcherApp.styles.css"
     },
     {
@@ -282,11 +282,11 @@ self.assetsManifest = {
       "url": "_framework/Blazorise.wasm"
     },
     {
-      "hash": "sha256-Md3W56ArdUcN2SfFbV+tlYexYQciCobuSZ+loo9s+rw=",
+      "hash": "sha256-LS+8pW2yf7Rwf7lIQ5HqoUtEkjLFdHKMFXCQ7rSASMs=",
       "url": "_framework/IdeaCatcherApp.pdb"
     },
     {
-      "hash": "sha256-oUeB5OSXVrKtHiVYXjdMkMtXZMskBz3FVqTBHOvq508=",
+      "hash": "sha256-qo9S25kDbMczdcw8VpKk+f5uawQRKSG9FhuyuIbnUys=",
       "url": "_framework/IdeaCatcherApp.wasm"
     },
     {
@@ -1046,7 +1046,7 @@ self.assetsManifest = {
       "url": "_framework/WindowsBase.wasm"
     },
     {
-      "hash": "sha256-AudsfSz+rTtw1opCX+e3cXVG7CYOgN/gtmtJj5rYKv0=",
+      "hash": "sha256-+ntHzKTpCa1sBkqbtz153uLyj6pdaij5o2O/VcHSc+0=",
       "url": "_framework/blazor.boot.json"
     },
     {

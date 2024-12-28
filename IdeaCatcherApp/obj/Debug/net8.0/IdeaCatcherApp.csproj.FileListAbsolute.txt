@@ -830,6 +830,8 @@
 /Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/webcil/netstandard.wasm
 /Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/webcil/System.Private.CoreLib.wasm
 /Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/webcil/IdeaCatcherApp.wasm
+/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/scopedcss/Components/NoteEditor.razor.rz.scp.css
+/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/scopedcss/Pages/IdeaManager.razor.rz.scp.css
 /Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/scopedcss/Shared/MainLayout.razor.rz.scp.css
 /Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/scopedcss/Shared/NavMenu.razor.rz.scp.css
 /Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/scopedcss/bundle/IdeaCatcherApp.styles.css
@@ -1058,8 +1060,6 @@
 /Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/refint/IdeaCatcherApp.dll
 /Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/IdeaCatcherApp.pdb
 /Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/ref/IdeaCatcherApp.dll
-/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/scopedcss/Pages/IdeaManager.razor.rz.scp.css
-/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/scopedcss/Components/NoteEditor.razor.rz.scp.css
-/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/compressed/xwmeyaks1f-rtnzpzruyj.gz
-/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/compressed/q4gutmqe8b-9ermhqh96e.gz
-/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/compressed/zf3kde87kv-m7ne26u6eu.gz
+/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/compressed/xwmeyaks1f-ii1w0oqbw6.gz
+/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/compressed/q4gutmqe8b-5iy24w1kj0.gz
+/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/obj/Debug/net8.0/compressed/zf3kde87kv-u37wwcckff.gz
