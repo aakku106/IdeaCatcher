@@ -38,3 +38,10 @@
    ```bash
    git clone https://github.com/aakku106/IdeaCatcher.git
    cd IdeaCatcher
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for more details.
+
+## Contributions  
+Contributions are welcome! Feel free to fork the repo, make your changes, and submit a pull request.  💙💫
