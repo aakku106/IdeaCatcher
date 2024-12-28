@@ -1,0 +1,36 @@
+# @format
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Publish .NET Project
+        run: dotnet publish IdeaCatcherApp/IdeaCatcherApp.csproj -c Release -o release --nologo
+
+      # Add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project.
+      - name: Add .nojekyll file
+        run: touch release/wwwroot/.nojekyll
+
+      # Change base tag in index.html from '/' to 'IdeaCatcher' to match GitHub Pages repository subdirectory
+      - name: Change base tag
+        run: sed -i 's/<base href="\/" \/>/<base href="\/IdeaCatcher\/" \/>/g' release/wwwroot/index.html
+
+      - name: GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: release/wwwroot
