@@ -229,19 +229,24 @@ textarea:focus {
 
 /* Welcome Page Styles */
 .welcome-container {
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
   background: var(--background);
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .welcome-content {
-  max-width: 800px;
+  /* max-width: 4800px; */
   width: 100%;
   text-align: center;
   animation: fadeIn 0.5s ease;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  height: 100%;
 }
 
 .logo-section {
@@ -263,8 +268,8 @@ textarea:focus {
 .action-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin: 40px 0;
+  gap: 16px;
+  margin: 20px 0;
 }
 
 .action-card {
@@ -297,12 +302,27 @@ textarea:focus {
 }
 
 .quick-tips {
-  margin-top: 40px;
-  padding: 20px;
+  margin-top: 20px;
+  padding: 16px;
   background: var(--surface);
   border-radius: 12px;
   display: inline-block;
   text-align: left;
+  transition: all 0.5s ease;
+
+  &:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    backdrop-filter: var(--blur);
+    -webkit-backdrop-filter: var(--blur);
+  }
 }
 
 .quick-tips h4 {
@@ -350,5 +370,11 @@ textarea:focus {
   .welcome-content {
     padding: 20px;
   }
+}
+
+/* Adjust spacing in welcome content */
+.welcome-container .welcome-footer {
+  margin-top: 1rem;
+  padding-top: 0.5rem;
 }
 /*  */

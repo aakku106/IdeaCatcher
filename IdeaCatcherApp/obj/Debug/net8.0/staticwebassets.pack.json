@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/IdeaCatcherApp.styles.css"
     },
     {
+      "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/404.html",
+      "PackagePath": "staticwebassets/404.html"
+    },
+    {
       "Id": "/Users/aakku/Documents/IdeaCatcher/IdeaCatcherApp/wwwroot/css/app.css",
       "PackagePath": "staticwebassets/css/app.css"
     },

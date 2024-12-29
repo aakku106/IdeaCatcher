@@ -49,8 +49,48 @@
                 <li>🌙 Switch themes for comfort</li>
             </ul>
         </div>
+
+        <div class="welcome-footer">
+            <div class="footer-links">
+                <a href="terms" class="footer-link">Terms & Conditions</a>
+                <span class="footer-separator">•</span>
+                <a href="https://github.com/aakku106/IdeaCatcher" target="_blank" class="footer-link">GitHub</a>
+            </div>
+        </div>
     </div>
 </div>
+
+<style>
+    .welcome-footer {
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border);
+        text-align: center;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .footer-link {
+        color: var(--text-secondary);
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: color 0.2s ease;
+    }
+
+    .footer-link:hover {
+        color: var(--primary);
+    }
+
+    .footer-separator {
+        color: var(--text-secondary);
+        opacity: 0.5;
+    }
+</style>
 
 @code {
     private string _currentTheme = "system";
