@@ -5,7 +5,7 @@
       "url": "404.html"
     },
     {
-      "hash": "sha256-M+X5v0kK92CGp2dTAeqBIUZs\/buXdDuAu0WLEaHIvJQ=",
+      "hash": "sha256-ZkInG0qqHUXToPbzRBAt65t85mZakCT3P70WnqbpGdk=",
       "url": "css\/app.css"
     },
     {
@@ -273,7 +273,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-90xdVswL4HuOqrpp0KL6yWSfIhjW7DpiVNwy2al2fZs=",
+      "hash": "sha256-Zq7gN+hKj+To9YioqC2O+1k5\/Y+3UWaBgE3sKjJj+Fg=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -293,7 +293,7 @@
       "url": "_framework\/Blazorise.wasm"
     },
     {
-      "hash": "sha256-Yynn6UX5DF6kXtqOxdn\/iCrO3J\/a5tOPzoiXfRfoZrs=",
+      "hash": "sha256-q54D1\/pz2c7TymfiLzHngz8AwN2JrSw3kcfJs9Mt4iU=",
       "url": "_framework\/IdeaCatcherApp.wasm"
     },
     {
@@ -745,5 +745,5 @@
       "url": "_content\/Blazorise\/vendors\/tippy.js"
     }
   ],
-  "version": "cS+nUojV"
+  "version": "hzixccOc"
 };
