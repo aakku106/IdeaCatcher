@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "IdeaCatcherApp",
   "resources": {
-    "hash": "sha256-7bWuY8opeAqyLauUg4dz9DgBm8lX2fv81bPjOdEJUSM=",
+    "hash": "sha256-hrdw6oLfrjPuSEc4sCFqxxxjTiFVLOp+H/3cd8O+KaI=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-VdKq87/z5NIxZKmuM+fv38XF+RcEb/bg3jVBwQSfwP4="
     },
@@ -213,10 +213,10 @@
       "mscorlib.wasm": "sha256-04e4k5XU8HWGB/dq/2+j84xzzGPflTs0IYWI0OxogVc=",
       "netstandard.wasm": "sha256-gnGZURPnoSmjXuYNCOJi5tt8qn2LRImWgue1Ru3/TDQ=",
       "System.Private.CoreLib.wasm": "sha256-6w3jYr0arcp8jnt4aeqh+AmqrLA6q7jl9rQYAwLzE0M=",
-      "IdeaCatcherApp.wasm": "sha256-TdoTHXn3+wsUTOjr3tyNB+Fb49u0uGXmkGR7LvnFNuY="
+      "IdeaCatcherApp.wasm": "sha256-0uesw+C3xfuSlqdLPRsj8d+3SGOQMhsxv1xWkAFwI2M="
     },
     "pdb": {
-      "IdeaCatcherApp.pdb": "sha256-Q2QffyJGAL+2buzaGWcmnHSwXwPW1gxOrAwgES93HwM="
+      "IdeaCatcherApp.pdb": "sha256-pBISX+mgkCcvOFZcT+euWbWpT1gov0v5EW4NzHDoxsc="
     }
   },
   "cacheBootResources": true,
