@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IdeaCatcherApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6dfefd90de815dd094f3a10dee918437afa4c7da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6092e60344d6e8ec85bfcab81f11debf527053fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("IdeaCatcherApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IdeaCatcherApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
