@@ -1,11 +1,18 @@
 /** @format */
 
 .idea-manager {
+  margin: -10px;
   display: grid;
-  grid-template-columns: 200px 250px 1fr;
+  grid-template-columns: 262px 264.9px 1fr;
   gap: 1px;
   height: 100%;
   background: var(--border);
+  min-width: 0;
+  border-radius: 10px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .folders-panel,
@@ -14,6 +21,8 @@
   background: var(--surface);
   padding: 16px;
   overflow-y: auto;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .folders-panel h3,
@@ -26,13 +35,19 @@
 
 .new-folder,
 .new-note {
+  position: sticky;
+  top: 0;
+  background: var(--surface);
+  padding: 16px 0;
+  z-index: 10;
   display: flex;
   gap: 8px;
-  margin-bottom: 16px;
+  width: 100%;
 }
 
 .new-folder input,
 .new-note input {
+  min-width: 0;
   flex: 1;
   padding: 8px 12px;
   border-radius: 6px;
@@ -99,4 +114,9 @@
   .editor-panel.visible {
     transform: translateX(0);
   }
+}
+
+.action-button {
+  white-space: nowrap;
+  flex-shrink: 0;
 }

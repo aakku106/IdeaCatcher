@@ -1,74 +1,22 @@
 /** @format */
 
 .app-container {
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: flex;
   height: 100vh;
   background-color: var(--background);
   color: var(--text);
-}
-
-.sidebar {
-  width: 250px;
-  background-color: var(--sidebar-bg);
-  border-right: 1px solid var(--border);
-  display: flex;
-  flex-direction: column;
-  backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: var(--blur);
-}
-
-.sidebar-header {
-  padding: 16px;
-  border-bottom: 1px solid var(--border);
-}
-
-.app-brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.app-icon {
-  font-size: 24px;
-}
-
-.app-brand h2 {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.folder-list {
-  padding: 16px;
-  flex: 1;
-  overflow-y: auto;
-}
-
-.folder-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 12px;
-  margin: 4px 0;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.folder-item:hover {
-  background-color: var(--surface-hover);
-}
-
-.folder-item.active {
-  background-color: var(--primary);
-  color: var(--text-on-primary);
 }
 
 .main-content {
   display: flex;
   flex-direction: column;
   min-width: 0;
+  flex: 1;
+  background-color: var(--surface);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
 }
 
 .top-bar {
@@ -78,7 +26,7 @@
   align-items: center;
   gap: 16px;
   border-bottom: 1px solid var(--border);
-  background-color: var(--surface);
+  background: var(--surface);
 }
 
 .window-controls {
@@ -96,34 +44,7 @@
   position: relative;
 }
 
-.menu-button {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .menu-button {
-    display: block;
-    background: transparent;
-    border: none;
-    color: var(--text);
-    padding: 8px;
-    cursor: pointer;
-  }
-
-  .sidebar {
-    position: fixed;
-    left: -250px;
-    top: 0;
-    bottom: 0;
-    z-index: 1000;
-    transition: transform 0.3s ease;
-  }
-
-  .sidebar.visible {
-    transform: translateX(250px);
-  }
-}
-
+/* Window controls */
 .control {
   width: 12px;
   height: 12px;
@@ -177,64 +98,6 @@
   background-color: #48e05f;
 }
 
-.main-content {
-  background-color: var(--surface);
-  backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: var(--blur);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-}
-
-.sidebar {
-  background-color: var(--sidebar-bg);
-  backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: var(--blur);
-  border-right: 1px solid var(--border);
-}
-
-.nav-button,
-.theme-button {
-  backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: var(--blur);
-  background-color: var(--button-secondary-bg);
-  border: 1px solid var(--border);
-}
-
-.nav-button:hover,
-.theme-button:hover {
-  background-color: var(--button-secondary-hover);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-hover);
-}
-
-.folder-item {
-  background-color: var(--button-secondary-bg);
-  border: 1px solid transparent;
-  transition: all 0.2s ease;
-}
-
-.folder-item:hover {
-  background-color: var(--button-secondary-hover);
-  border-color: var(--border);
-  transform: translateY(-1px);
-}
-
-.folder-item.active {
-  background-color: var(--primary);
-  border-color: transparent;
-  box-shadow: var(--button-shadow);
-}
-
-.top-bar {
-  background: var(--surface);
-  border-bottom: 1px solid var(--border);
-}
-
-.app-container * {
-  transition: background-color 0.2s ease, color 0.2s ease,
-    border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-}
-
 /* Top bar actions */
 .top-bar-actions {
   margin-left: auto;
@@ -259,6 +122,8 @@
   transition: all 0.2s ease;
   font-size: 14px;
   font-weight: 500;
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
 }
 
 .nav-button:hover {
@@ -289,10 +154,18 @@
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
 }
 
 .theme-button:hover {
   background: var(--button-secondary-hover);
   transform: translateY(-1px);
   box-shadow: var(--shadow);
+}
+
+/* Global transitions */
+.app-container * {
+  transition: background-color 0.2s ease, color 0.2s ease,
+    border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }

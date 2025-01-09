@@ -6,7 +6,7 @@
     <div class="folders-panel">
         <h3>Folders</h3>
         <div class="new-folder">
-            <input @bind="newFolderName" placeholder="New folder name" />
+            <input @bind="newFolderName" placeholder="New IdeaFolder" />
             <button class="action-button" @onclick="CreateFolder">
                 <span>+</span>
                 Create
@@ -26,7 +26,7 @@
         {
             <h3>Notes in @selectedFolder.Name</h3>
             <div class="new-note">
-                <input @bind="newNoteTitle" placeholder="Note title" />
+                <input @bind="newNoteTitle" placeholder="IdeaNote title" />
                 <button class="action-button" @onclick="CreateNote">
                     <span>+</span>
                     Add Note

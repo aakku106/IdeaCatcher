@@ -7,6 +7,7 @@
   background: var(--surface);
   border-radius: 12px;
   overflow: hidden;
+  /* border: 10px solid red; */
 }
 
 .note-header {
@@ -19,6 +20,7 @@
 
 .note-title {
   flex: 1;
+  border-radius: 10vw;
 }
 
 .note-title input {
@@ -29,6 +31,7 @@
   background: transparent;
   color: var(--text);
   padding: 0;
+  /* border: 10px solid red; */
 }
 
 .note-title input:focus {
@@ -42,6 +45,7 @@
   padding: 8px 16px;
   border-bottom: 1px solid var(--border);
   background: var(--surface);
+  /* border: 10px solid red; */
 }
 
 .tool-button {
@@ -52,6 +56,7 @@
   color: var(--text);
   cursor: pointer;
   transition: all 0.2s ease;
+  /* border: 10px solid red; */
 }
 
 .tool-button:hover {

@@ -1,12 +1,12 @@
 self.assetsManifest = {
-  "version": "MlozcpxS",
+  "version": "F6PDHlzq",
   "assets": [
     {
       "hash": "sha256-6IzqFndXc3vQjIcSdDqtkVk+wZWCz+SWVqtL11diR2E=",
       "url": "404.html"
     },
     {
-      "hash": "sha256-ZoLVtIJg8OQEV9VMJuQ5GYBG8SRzNZu5usXS22Fy7DQ=",
+      "hash": "sha256-zswfZW/Fthn4zGVcK2LR5xGJU77bNEjOmHX9PSL6bL4=",
       "url": "IdeaCatcherApp.styles.css"
     },
     {
@@ -286,11 +286,11 @@ self.assetsManifest = {
       "url": "_framework/Blazorise.wasm"
     },
     {
-      "hash": "sha256-CtqirFlzmdHQGVzvMjRFcmp9a7H0sVuNe5M1fLLdf8A=",
+      "hash": "sha256-8UXt4odRvagY4/aZkKZukm1aYi1UZZXFvSRnCgxy+jM=",
       "url": "_framework/IdeaCatcherApp.pdb"
     },
     {
-      "hash": "sha256-xNSk362XrJS2D5p1uA1KjQfDXVe2/WLfbEuztPdB05s=",
+      "hash": "sha256-yjsoUq1brvC/JWKHFItim0paGX9ZUh9CAzBoBCUTq1g=",
       "url": "_framework/IdeaCatcherApp.wasm"
     },
     {
@@ -1050,7 +1050,7 @@ self.assetsManifest = {
       "url": "_framework/WindowsBase.wasm"
     },
     {
-      "hash": "sha256-mnRb9roGbzGea2uV2aQzEkWu6LQYTcLumcvY3z3WLOs=",
+      "hash": "sha256-3eASuOVGfxnm01rSzDOXc6gGhLyO3CQv7s0TOgJzJpY=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -1114,7 +1114,7 @@ self.assetsManifest = {
       "url": "css/theme.css"
     },
     {
-      "hash": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
+      "hash": "sha256-8YTnE3khzgpMiYgKpQIG8gqTqKhgrZDipL19s69NEro=",
       "url": "favicon.png"
     },
     {
@@ -1126,7 +1126,7 @@ self.assetsManifest = {
       "url": "generate-screenshots.html"
     },
     {
-      "hash": "sha256-DbpQaq68ZSb5IoPosBErM1QWBfsbTxpJqhU0REi6wP4=",
+      "hash": "sha256-fd283yWNS1FWkyJKo+oe/qhrZ35VTjseGJYGHzeeiGo=",
       "url": "icon-192.png"
     },
     {
@@ -1134,7 +1134,7 @@ self.assetsManifest = {
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-pX+Nw3JIvN9VbnxcE08QN5qFnIaXPks8inxWpijPIbE=",
+      "hash": "sha256-fVY6/c6aem/IoqUY+XSCExanYayDO8WynXlC598MEvI=",
       "url": "index.html"
     },
     {
@@ -1318,7 +1318,7 @@ self.assetsManifest = {
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-hgTj8gZA2ySgoUpy2pDmSEuv+t+fgSGVe5IgTdPUS4k=",
+      "hash": "sha256-QCvy0OjzJuS5BxuAoQYEnjw4wHuhnIV4J0/wO843j20=",
       "url": "offline.html"
     },
     {
