@@ -156,8 +156,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ApplicationBundle</AssetTraitValue>
-      <Fingerprint>m72c5ap6zb</Fingerprint>
-      <Integrity>zswfZW/Fthn4zGVcK2LR5xGJU77bNEjOmHX9PSL6bL4=</Integrity>
+      <Fingerprint>w4comilbhu</Fingerprint>
+      <Integrity>kD6ZKL+ymxLYEAyAPJ2G4sGwfZgytDJq9cUvCyV6Yr4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\IdeaCatcherApp.styles.css'))</OriginalItemSpec>

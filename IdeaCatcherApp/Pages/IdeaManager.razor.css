@@ -1,14 +1,31 @@
 /** @format */
 
 .idea-manager {
-  /* margin: -15px; */
   display: grid;
-  grid-template-columns: 262px 264.9px 1fr;
+  grid-template-columns: 220px 264.9px 1fr;
   gap: 1px;
   height: 100%;
   background: var(--border);
-  min-width: 0;
-  border-radius: 10px;
+}
+
+.actions-panel {
+  background: var(--surface);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.action-button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .folders-panel,
@@ -17,8 +34,6 @@
   background: var(--surface);
   padding: 16px;
   overflow-y: auto;
-  min-width: 0;
-  max-width: 100%;
 }
 
 .folders-panel h3,
@@ -31,25 +46,20 @@
 
 .new-folder,
 .new-note {
-  position: sticky;
-  top: 0;
-  background: var(--surface);
-  padding: 16px 0;
-  z-index: 10;
   display: flex;
+  flex-direction: column;
   gap: 8px;
-  width: 100%;
+  margin-bottom: 16px;
 }
 
 .new-folder input,
 .new-note input {
-  min-width: 0;
-  flex: 1;
-  padding: 8px 12px;
-  border-radius: 6px;
+  padding: 8px;
+  border-radius: 4px;
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
+  text-align: center;
 }
 
 .folder,
@@ -60,6 +70,7 @@
   cursor: pointer;
   transition: all 0.2s ease;
   color: var(--text);
+  text-align: center;
 }
 
 .folder:hover,
@@ -80,39 +91,154 @@
 }
 
 .editor-panel {
-  display: none;
   background: var(--surface);
+  display: none;
 }
 
 .editor-panel.visible {
   display: block;
 }
 
+.note-editor {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.note-editor h2 {
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.note-content {
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-secondary);
+  gap: 1rem;
+}
+
+.empty-state .oi {
+  font-size: 48px;
+  opacity: 0.5;
+}
+
+.empty-editor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-secondary);
+  gap: 1rem;
+}
+
+.empty-editor .oi {
+  font-size: 48px;
+  opacity: 0.5;
+}
+
 @media (max-width: 768px) {
   .idea-manager {
+    grid-auto-flow: row;
     grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
   }
 
   .folders-panel,
-  .notes-panel,
-  .editor-panel {
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
+  .notes-panel {
+    height: auto;
+    max-height: 35vh;
+    overflow-y: auto;
   }
 
-  .folders-panel.visible,
-  .notes-panel.visible,
-  .editor-panel.visible {
+  .editor-panel {
+    display: block !important;
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .panels-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 180px 220px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    background: var(--surface);
+    border-left: 1px solid var(--border);
+  }
+
+  .panels-wrapper.visible {
     transform: translateX(0);
+  }
+
+  .folders-panel,
+  .notes-panel {
+    border-right: 1px solid var(--border);
   }
 }
 
 .action-button {
   white-space: nowrap;
   flex-shrink: 0;
+}
+
+.menu-toggle {
+  display: none;
+  padding: 8px;
+  cursor: pointer;
+  color: var(--text);
+  background: var(--surface);
+  border: none;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 1000;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .idea-manager {
+    grid-template-columns: 1fr;
+  }
+
+  .folders-panel,
+  .notes-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 400px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    background: var(--surface);
+  }
+
+  .folders-panel.visible,
+  .notes-panel.visible {
+    transform: translateX(0);
+  }
 }
